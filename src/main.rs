@@ -6,7 +6,8 @@ fn main() {
 
     println!("Guess the number between 1 and 1000 (inclusive)");
 
-    let secret_number: u32 = rand::thread_rng().gen_range(1..=1000);
+    let var_name = 1000;
+    let secret_number: u32 = rand::thread_rng().gen_range(1..=var_name);
 
     loop {
         println!("Please input your guess.");
